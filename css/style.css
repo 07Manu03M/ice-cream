@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-left: 75px;
     padding-right: 75px;
 }
@@ -44,6 +44,7 @@ header{
     color: var(--color-1);
     text-decoration: none;
     font-size: 28px;
+    display: flex;
 }
 
 .header_nav li a img{
@@ -57,3 +58,44 @@ header{
 .header_menu img{
 
 }
+
+main{
+    background: green;
+    /* display: flex; */
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.section_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_jumping{
+    width: 679px;
+    background: violet;
+    display: flex;
+    flex-direction: column;
+}
+
+.article_jumping h1{
+    color: var(--color-1);
+    font-family: "Popping";
+    font-size: 120px;
+    line-height: 110px;
+}
+
+.article_jumping p{
+
+}
+
+.div_buttons{
+    background: rebeccapurple;
+    display: flex;
+}
+
+.div_buttons a{
+
+}
+

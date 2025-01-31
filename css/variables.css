@@ -15,3 +15,12 @@
     font-family: "Popping";
     src: url(../storage/font/Poppins/Poppins-SemiBold.ttf);
 }
+@font-face{
+    font-family: "Popping_Medium";
+    src: url(../storage/font/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: "Popping_thin";
+    src: url(../storage/font/Poppins/Poppins-Thin.ttf);
+}

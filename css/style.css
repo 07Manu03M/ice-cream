@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    background-color: var(--color-8);
 }
 
 header{
@@ -77,7 +78,7 @@ main{
 }
 
 .article_jumping{
-    width: 679px;
+    width: 750px;
     /* background: violet; */
     display: flex;
     flex-direction: column;
@@ -126,9 +127,62 @@ main{
     backdrop-filter: blur(24px);
 }
 
+#reviews{
+    height: 221px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 27px;
+    display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(var(--cards)), var(--cardHeight);
+        gap: var(--cardMargin);
+}
+
+#reviews::-webkit-scrollbar{
+    width: 10px;
+}
+
+#reviews::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+#reviews::-webkit-scrollbar-thumb{
+    background: var(--color-1);
+    border-radius: 10px;
+}
+
+#reviews::-webkit-scrollbar-thumb:hover{
+    background: var(--color-6);
+    cursor: grab;
+}
+
+#reviews::-webkit-scrollbar-thumb:active{
+    cursor: grabbing;
+}
+
+#reviews::-webkit-scrollbar-button{
+    display: none;
+}
+
+.div_reviews-container:nth-child(1){
+    --index: 1;
+}
+
+.div_reviews-container:nth-child(2){
+    --index: 2;
+}
+
+.div_reviews-container:nth-child(3){
+    --index: 3;
+}
+
+.div_reviews-container:nth-child(4){
+    --index: 4;
+}
+
 .article_reviews{
     /* background: red; */
-    padding: 20px;
+    overflow-y: auto;
 }
 
 .div_reviews_container{
@@ -136,15 +190,38 @@ main{
     height: 202px;
     background: var(--color-1);
     border-radius: 18px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 1px solid var(--color-5);
+    position: sticky;
+    top: 0px;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
 }
 
 .div_reviews_cards{
     /* background: green; */
     /* padding: 20px; */
+}
+
+.div_reviews_cards::after{
+    content: "x";
+    cursor: pointer;
+    font-family: "Popping-Medium";
+    color: var(--color-1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--color-8);
+    border: 1px solid var(--color-6);
+    border-radius: 100%;
+    left: -18px;
+    top: -18px;
 }
 
 .div_reviews_profile{

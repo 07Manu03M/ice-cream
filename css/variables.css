@@ -28,3 +28,8 @@
     font-family: "Popping_thin";
     src: url(../storage/font/Poppins/Poppins-Thin.ttf);
 }
+
+@font-face{
+    font-family: "Poppins-regular";
+    src: url(../storage/font/Poppins/Poppins-Regular.ttf);
+}
